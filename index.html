@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Checkin</title>
+</head>
+
+<body>
+    <!-- Main Menu -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="logo_img">
+                <h1 class="logo-text">Checkin</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="checkin-nav-link nav-link active" aria-current="page" href="#">Search</a>
+                    <a class="checkin-nav-link nav-link" href="#services">Services</a>
+                    <a class="checkin-nav-link nav-link" href="#recommends">Recommends</a>
+                    <a class="checkin-nav-link nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Search Form -->
+    <div id="search" class="hero">
+        <div class="container">
+            <form action="index.html" method="get" class="search-form">
+                <div class="form-group" style="flex: 100%;">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" name="city" class="form-control" placeholder="Type your destination">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" class="form-control" id="inputcheckin" placeholder="Check In">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" class="form-control" id="inputcheckout" placeholder="Check Out">
+                </div>
+
+                <div class="form-group">
+                    <i class="fa-solid fa-bed"></i>
+                    <select class="form-control">
+                        <option value="">Rooms</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <i class="fa-solid fa-user"></i>
+                    <select class="form-control">
+                        <option value="">Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <i class="fa-solid fa-children"></i>
+                    <select class="form-control">
+                        <option value="">Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+
+                    </select>
+                </div>
+
+
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Check</button>
+                </div>
+
+            </form>
+            <p class="needhelp">
+                Feeling lost ?
+                <a href="#">Need help ?</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Subscribe -->
+    <section class="section-color">
+        <div class="container text-center">
+            <h2 class="section-title">We are here to help you</h2>
+            <p class="section-subtitle">Subscribe to get our newletter</p>
+            <a href="#" class="btn btn-white">Subscribe</a>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"
+            class="section-down-arrow">
+            <polygon fill="var(--color-primary)" points="0,0 100,0 50,50"></polygon>
+
+        </svg>
+        <div class="container">
+            <div class="row">
+
+                <article class="article col-lg-4">
+                    <!-- <i class="fa-solid fa-calendar-lines-pen"></i> -->
+                    <i class="fa-solid fa-calendar-check article-icon"></i>
+                    <h3 class="artcile-title">Accept online bookings</h3>
+                    <p>Your own mobile-optimised booking website or integration with your existing site. Also, accept
+                        bookings directly via Facebook, Instagram, Google or your own branded client app.</p>
+                    <a href="#" class="btn btn-primary btn-fit">Continue reading</a>
+                </article>
+
+                <article class="article col-lg-4">
+                    <i class="fa-solid fa-money-bill article-icon"></i>
+                    <h3 class="artcile-title">Accept Payments</h3>
+                    <p>Accept online payments & deposits through a range of payment processors like PayPal, Stripe and
+                        more or accept cash or card onsite via our POS system or via Crypto currency.</p>
+                    <a href="#" class="btn btn-primary btn-fit">Continue reading</a>
+                </article>
+
+                <article class="article col-lg-4">
+                    <i class="fa-solid fa-sms article-icon"></i>
+                    <h3 class="artcile-title">Notifications via SMS/Email</h3>
+                    <p>Reminders to staff and clients whenever appointments are booked, cancelled or rescheduled. With
+                        push notifications on your mobile for new booking information via the admin app.</p>
+                    <a href="#" class="btn btn-primary btn-fit">Continue reading</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider -->
+    <section id="recommends" class="section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="level-slider">
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-01.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>New York</h3>
+                                <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic
+                                    Ocean.</p>
+                                <a href="#" class="btn btn-primary btn-fit">Get more info</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-02.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Brazil</h3>
+                                <p>Brazil, officially the Federative Republic of Brazil, is the largest country in South
+                                    America and in Latin America.</p>
+                                <a href="#" class="btn btn-primary btn-fit">Get more info</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-03.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Germany</h3>
+                                <p>Germany is a Western European country with a landscape of forests, rivers, mountain
+                                    ranges and North Sea beaches. It has over 2 millennia of history.</p>
+                                <a href="#" class="btn btn-primary btn-fit">Get more info</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-04.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Italy</h3>
+                                <p>Italy, a European country with a long Mediterranean coastline, has left a powerful
+                                    mark on Western culture and cuisine.</p>
+                                <a href="#" class="btn btn-primary btn-fit">Get more info</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-05.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Turkey</h3>
+                                <p>Turkey, officially the Republic of Türkiye, is a transcontinental country located
+                                    mainly on the Anatolian Peninsula in Western Asia, with a small portion on the
+                                    Balkan Peninsula in Southeast Europe.</p>
+                                <a href="#" class="btn btn-primary btn-fit">Get more info</a>
+                            </div>
+                        </article>
+
+                        <article class="level-slider-item">
+                            <img src="./assets/img/img-06.jpg" alt="">
+                            <div class="level-slider-item-container">
+                                <h3>Malisya</h3>
+                                <p>Malaysia is a country in Southeast Asia. The federal constitutional monarchy consists
+                                    of thirteen states and three federal territories</p>
+                                <a href="#" class="btn btn-primary btn-fit">Get more info</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="star-places">
+                        <div class="star-places-header">
+                            <h3>Recommended Places</h3>
+                            <p>Places that we recommend for you</p>
+                        </div>
+                        <div class="star-places-body">
+
+                            <a href="#">
+                                <img src="./assets/img/tn-img-01.jpg" alt="">
+                                <h4>Europe</h4>
+                            </a>
+
+                            <a href="#">
+                                <img src="./assets/img/tn-img-02.jpg" alt="">
+                                <h4>Asia</h4>
+                            </a>
+
+                            <a href="#">
+                                <img src="./assets/img/tn-img-03.jpg" alt="">
+                                <h4>Africa</h4>
+                            </a>
+
+                            <a href="#">
+                                <img src="./assets/img/tn-img-04.jpg" alt="">
+                                <h4>America</h4>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="video">
+        <div class="video-overlay">
+            <i class="fa fa-play-circle video-control-play"></i>
+            <i class="fa fa-pause-circle video-control-pause"></i>
+        </div>
+        <div class="video-container">
+            <video class="level-video">
+                <source src="./assets/video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310844.0805017142!2d13.42473175!3d52.5068441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2stn!4v1684212071066!5m2!1sen!2stn"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Name">
+                            <i class="fa fa-user"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Email">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="" id="" class="form-control" placeholder="Subject">
+                            <i class="fa fa-book"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea type="text" name="" id="" class="form-control" placeholder="Message"
+                                rows="9"></textarea>
+                            <i class="fa fa-commenting"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p> Copyright &copy; 2023 OUSSAMA BELKAHLA</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
